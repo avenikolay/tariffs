@@ -8,32 +8,31 @@ function App() {
       id: 1,
       price: 700,
       title: 'Мой онлайн+',
-      details: [
-        'безлимит на Tele2 России',
-        '800 мин. на остальные номера России',
-        '30 ГБ интернета',
-      ]
+      details: {
+        unlimitedCalls: true,
+        minutes: 800,
+        traffic: 30
+      }
     },
     {
       id: 2,
       price: 550,
       title: 'Везде онлайн',
-      details: [
-        'безлимит на Tele2 России',
-        '500 мин. на остальные номера России',
-        '40 ГБ интернета',
-      ]
-      
+      details: {
+        unlimitedCalls: true,
+        minutes: 500,
+        traffic: 40
+      }
     },
     {
       id: 3,
       price: 320,
       title: 'Мой онлайн',
-      details: [
-        'безлимит на Tele2 России',
-        '500 мин. на другие мобильные номера домашнего региона',
-        '15 ГБ интернета',
-      ]
+      details: {
+        unlimitedCalls: true,
+        minutes: 500,
+        traffic: 15
+      }
     }
   ]
   return (

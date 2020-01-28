@@ -1,5 +1,5 @@
 import React from 'react'
-import './tariff.css'
+import './Tariff.css'
 
 export default function Tariff(props) {
     return (
@@ -15,9 +15,17 @@ export default function Tariff(props) {
             </div>
             <div className="tariff__details">
                 <ul className="tariff__details_list">
-                    {props.tariff.details.map((detail, index) => 
-                        <li key={index} className="tariff__details_item">{detail}</li>
-                    )}
+                    {
+                        props.tariff.details.unlimitedCalls === true &&
+                        <li className="tariff__details_item"> 
+                        безлимит на Tele2 России</li>
+                        
+                    }
+                    
+                    <li className="tariff__details_item"> 
+                    {props.tariff.details.minutes} мин. на остальные номера России</li>
+                    <li className="tariff__details_item"> 
+                    {props.tariff.details.traffic} ГБ интернета</li>
                 </ul>
             </div>
         </div>
