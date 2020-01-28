@@ -1,22 +1,22 @@
 import React from 'react'
-import './Tarrif.css'
+import './tariff.css'
 
 export default function Tariff(props) {
     return (
-        <div className="tarrif">
-            <h2 className="tarrif__title">{ props.tarrif.title }</h2>
-            <div className="tarrif__price">
-                <span className="tarrif__priceNum">
-                   { props.tarrif.price }
+        <div className="tariff">
+            <h2 className="tariff__title">{ props.tariff.title }</h2>
+            <div className="tariff__price">
+                <span className="tariff__price_num">
+                   { props.tariff.price }
                 </span>
-                <span className="tarrif__priceCurrency">
+                <span className="tariff__price_currency">
                     рублей в месяц
                 </span>
             </div>
-            <div className="tarrif__details">
-                <ul className="tarrif__detailsList">
-                    {props.tarrif.details.map((detail, index) => 
-                        <li key={index} className="tarrif__detailsItem">{detail}</li>
+            <div className="tariff__details">
+                <ul className="tariff__details_list">
+                    {props.tariff.details.map((detail, index) => 
+                        <li key={index} className="tariff__details_item">{detail}</li>
                     )}
                 </ul>
             </div>

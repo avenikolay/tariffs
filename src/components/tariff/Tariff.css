@@ -1,35 +1,35 @@
-.tarrif {
+.tariff {
     border: 1px solid #d1d6db;
     width: calc(100% / 3 - 30px);
     padding: 15px 28px 18px 17px;
     margin: 0 15px 30px;
 }
-.tarrif__title {
+.tariff__title {
     font-size: 20px;
 }
-.tarrif__price {
+.tariff__price {
     margin-bottom: 15px;
 }
-.tarrif__priceNum {
+.tariff__price_num {
     font-size: 52px;
 }
-.tarrif__detailsList {
+.tariff__details_list {
     padding: 0;
 }
-.tarrif__detailsItem {
+.tariff__details_item {
     font-size: 16px;
     margin-bottom: 10px;
     list-style-type: none;
 }
 
 @media (min-width: 460.99px) and (max-width: 700px) {
-    .tarrif {
+    .tariff {
         width: calc(50% - 30px);
     }
 }
 
 @media (max-width: 460px) {
-    .tarrif {
+    .tariff {
         max-width: 100%;
         width: 100%;
         margin-left: 0;

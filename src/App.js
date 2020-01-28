@@ -3,7 +3,7 @@ import './App.css';
 import Tariff from './components/tariff/Tariff';
 
 function App() {
-  const tarrifs = [
+  const tariffs = [
     {
       id: 1,
       price: 700,
@@ -38,9 +38,9 @@ function App() {
   ]
   return (
     <div className="container">
-      <div className="tarrifs">
+      <div className="tariffs">
         { 
-          tarrifs.map(tarrif => <Tariff key={tarrif.id} tarrif={tarrif}/>)
+          tariffs.map(tariff => <Tariff key={tariff.id} tariff={tariff}/>)
         }
       </div>
     </div>
